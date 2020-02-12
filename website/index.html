@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <title>Weather Journal</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ds-lyt-col-center">
+  <nav id="navtab" class="ds-mrgn-btm-32">
+      <div class="ds-c-nav-width">
+          <span href="index.html" class="ds-text-secondary logo nav-padding">Weather Journal App </span>
+      </div>
+  </nav>
+  <div>
+    <div id="app" class="ds-lyt-col-left">
+      <div class="holder zip ds-lyt-col-left">
+        <label for="zip">Enter Zipcode here</label>
+        <input type="text" id="zip" placeholder="enter zip code here" class="ds-form-brdr " />
+      </div>
+      <div class="holder feel ds-lyt-col-left ds-mrgn-top-16">
+        <label for="feelings">What the weather like today? </label>
+        <textarea
+          class="myInput ds-form-brdr"
+          id="feelings"
+          placeholder="Enter your feelings here"
+          rows="9"
+          cols="50"
+        ></textarea>
+        <button id="generate" type="submit" class="ds-mrgn-btm-32 ds-mrgn-top-16">Create</button>
+      </div>
+      <div class="holder entry ds-lyt-col-left">
+        <div class="title">Most Recent Entry</div>
+        <div id="entryHolder" class="">
+          <div id="date"></div>
+          <div id="temp"></div>
+          <div id="content" ></div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
